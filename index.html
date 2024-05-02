@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Todo List</title>
+</head>
+
+<body>
+  <section class="vh-100" style="background-color: #eee;">
+    <div class="card-body p-4">
+      <h4 class="text-center my-3 pb-3">To Do App</h4>
+      <div class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+        <div class="col-12">
+          <div data-mdb-input-init class="form-outline">
+            <label class="form-label" for="form1">Enter a task here</label>
+            <input type="text" id="task" class="form-control" />
+          </div>
+        </div>
+        <div class="col-12 mt-2 d-flex">
+          <button type="submit" class="btn btn-primary d-inline mr-2 py-2" id="save">Save</button>
+          <div class="alert alert-danger mb-0 py-2 d-none" id="alert">A task is requiered to save</div>
+        </div>
+      </div>
+      <table id="table" class="table mb-4">
+        <thead>
+          <tr>
+            <th scope="col" class="col-1">No.</th>
+            <th scope="col" class="col-6">Todo item</th>
+            <th scope="col " class="col-1">Status</th>
+            <th scope="col" class="col-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>
