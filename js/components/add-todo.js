@@ -1,4 +1,4 @@
-import CustomAlert from "./show-alert";
+import CustomAlert from "./show-alert.js";
 export default class AddTodo {
     constructor() {
         this.saveButton = document.getElementById("save");
